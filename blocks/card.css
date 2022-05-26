@@ -1,7 +1,7 @@
 .card {
   background-color: white;
   border-radius: 10px 10px;
-  width: 282px;
+  max-width: 282px;
   max-height: 361px;
   color: black;
   position: relative;
@@ -70,4 +70,13 @@
   background-position: center;
   background-size: cover;
   cursor: pointer;
+}
+@media screen and (max-width: 390px) {
+  .card {
+    max-width: 230px;
+  }
+
+  .card__image {
+    min-width: 230px;
+  }
 }

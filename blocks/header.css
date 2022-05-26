@@ -40,5 +40,28 @@
 @media screen and (max-width: 950px) {
   .header {
     margin: 28px 0 38.25px 0;
+    grid-template-columns: 200px auto;
+  }
+}
+@media screen and (max-width: 511px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+  .header__picture {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .header__title {
+    font-size: 28px;
+  }
+  .header__paragraph {
+    font-size: 16px;
+  }
+  .header__picture {
+    width: 110px;
+    height: 110px;
   }
 }
