@@ -31,78 +31,7 @@
       </header>
       <main>
         <section class="gallery">
-          <ul class="gallery__list">
-            <li class="card">
-              <img
-                src="./images/rosary-string-of-hearts.png"
-                alt="string of hearts"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">String of hearts</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/snake-plant.jpg"
-                alt="snake plant"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Snake plant</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/peace-lily.jpeg"
-                alt="peace lily"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Peace lily</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/monstera-deliciosa.jpg"
-                alt="monstera deliciosa"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Monstera deliciosa</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/philodendron.jpg"
-                alt="philodendron"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Philodendron</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/succulents.jpg"
-                alt="succulents"
-                class="card__picture"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Succulents</h2>
-                <button type="button" class="card__button"></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="gallery__list"></ul>
         </section>
       </main>
       <footer class="footer" id="footer">
@@ -144,6 +73,37 @@
         <p class="footer__copyright">©2022 Wimari group</p>
       </footer>
     </div>
-    <script src="./scripts/script.js" defer></script>
+
+    <div class="popup card-popup">
+      <div class="card-popup__container">
+        <button
+          class="popup__close-button card-popup__close-button"
+          type="button"
+        ></button>
+        <img class="card-popup__image" src="&nbsp;" alt="" />
+        <p class="card-popup__subtitle"></p>
+      </div>
+    </div>
+
+    <template id="card__template">
+      <li class="card">
+        <button
+          class="card__delete-button"
+          aria-label="delete"
+          type="button"
+        ></button>
+        <div class="card__image"></div>
+        <div class="card__title-container">
+          <h2 class="card__title"></h2>
+          <button
+            class="card__like-button"
+            aria-label="like"
+            type="button"
+          ></button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
