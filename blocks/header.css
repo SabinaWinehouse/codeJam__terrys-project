@@ -1,7 +1,6 @@
 .header {
   border-bottom: 1px solid rgba(92, 91, 91, 0.7);
   max-width: 880px;
-  margin: 45px auto 0 auto;
   margin: 36px 0 50px 0;
   display: grid;
   grid-template-areas:
@@ -11,6 +10,7 @@
 }
 .header__logo {
   margin: 0 0 41px 0;
+  max-width: 200px;
 }
 .header__picture {
   grid-area: picture;
