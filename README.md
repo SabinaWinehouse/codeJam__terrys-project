@@ -1,6 +1,6 @@
 # codeJam-terrys-project-Your-Plants
 
-## Your Plants is a webpage where you can find the best planrs for your home
+## 'Your Plants' is a webpage where you can find the best plants for your home
 
 ### Project features
 
