@@ -4,11 +4,13 @@
 
 ### Project features
 
-Semantic HTML5
-Flexbox
-Grid
-Positioning
-Flat BEM
-JavaScript
+- Semantic HTML5
+- Flexbox
+- Grid
+- Positioning
+- Flat BEM
+- JavaScript
+
+**GItHub**
 
 - [Link to the project in GitHub] (https://sabinawinehouse.github.io/codeJam__terrys-project/)
