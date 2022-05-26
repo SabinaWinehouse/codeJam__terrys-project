@@ -3,7 +3,6 @@
   margin: 0 auto;
   max-width: 1280px;
   font-family: "Nanum Myeongjo", serif;
-
   background: url("../images/wallpaper.jpg");
   background-size: cover;
   background-position: center;
@@ -16,6 +15,7 @@
   );
   max-width: 970px;
   margin: 0 auto;
+  padding: 50px 0 50px 0;
 }
 
 @media screen and (max-width: 1000px) {

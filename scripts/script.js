@@ -1,27 +1,27 @@
 const initialCards = [
   {
     name: "String of hearts",
-    link: "https://unsplash.com/photos/xGpYDi-0348",
+    link: "https://images.unsplash.com/photo-1602761265250-08beab2b989b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387",
   },
   {
     name: "Snakeplant",
-    link: "https://www.pexels.com/photo/person-holding-green-plant-in-pot-9412363/",
+    link: "https://images.pexels.com/photos/9412363/pexels-photo-9412363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     name: "Peace Lily",
-    link: "https://unsplash.com/photos/2y8kIVvvC0w",
+    link: "https://images.unsplash.com/photo-1616690248297-1ec539dd910f?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=377",
   },
   {
     name: "Monstera",
-    link: "https://unsplash.com/photos/bwsTJMnhcwE",
+    link: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464",
   },
   {
     name: "Philodendron",
-    link: "https://unsplash.com/photos/IjVvZCY2qmU",
+    link: "https://images.unsplash.com/photo-1609142621730-db3293839541?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464",
   },
   {
     name: "Succulents, varied",
-    link: "https://unsplash.com/photos/ncQ2sguVlgo",
+    link: "https://images.unsplash.com/photo-1459156212016-c812468e2115?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=405",
   },
 ];
 
@@ -70,7 +70,7 @@ function getCardElement(data) {
   const deleteButton = cardElement.querySelector(".card__delete-button");
 
   cardTitle.textContent = data.name;
-  cardImage.style.backgroundImage = `url('${data.link}')`;
+  cardImage.style.backgroundImage = `url("${data.link}")`;
 
   function toggleLikeButton(evt) {
     if (evt.target === likeButton) {
@@ -79,10 +79,6 @@ function getCardElement(data) {
   }
 
   likeButton.addEventListener("click", toggleLikeButton);
-
-  deleteButton.addEventListener("click", () => {
-    cardElement.remove();
-  });
 
   cardElement.querySelector(".card__image").addEventListener("click", () => {
     const cardPopupImage = cardPopup.querySelector(".card-popup__image");

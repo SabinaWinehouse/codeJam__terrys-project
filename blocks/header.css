@@ -1,59 +1,37 @@
 .header {
-  border-bottom: 1px solid rgba(92, 91, 91, 0.7);
   max-width: 880px;
-  margin: 36px 0 50px 0;
+  margin: 36px auto 50px;
   display: grid;
   grid-template-areas:
-    "picture name btn-add"
-    " picture about btn-add";
-  grid-template-columns: 150px auto 150px;
+    "picture title"
+    " picture paragraph";
+  grid-template-columns: 300px auto;
+  background-color: rgb(212, 187, 187, 0.4);
+  border-radius: 10px;
 }
-.header__logo {
-  margin: 0 0 41px 0;
-  max-width: 200px;
-}
+
 .header__picture {
   grid-area: picture;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
 }
 .header__title {
-  grid-area: name;
+  grid-area: title;
   align-self: center;
   font-size: 42px;
   font-weight: 500;
   line-height: 48px;
   margin: 0 0 16px 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  max-width: 373px;
 }
 .header__paragraph {
-  grid-area: about;
+  grid-area: paragraph;
   margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  max-width: 415px;
-}
-.profile__button-add {
-  grid-area: btn-add;
-  justify-self: end;
-  border-radius: 2px;
-  border: 2px solid #ffffff;
-  align-self: center;
-  background: url("../images/add_button.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  width: 150px;
-  height: 50px;
-  font-size: 22px;
 }
 
 .profile__button-add:hover {
@@ -62,10 +40,5 @@
 @media screen and (max-width: 950px) {
   .header {
     margin: 28px 0 38.25px 0;
-  }
-  .header__logo {
-    margin: 0 0 28px 27px;
-    width: 126px;
-    height: 26px;
   }
 }
